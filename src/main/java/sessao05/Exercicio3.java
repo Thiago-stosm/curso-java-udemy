@@ -12,7 +12,7 @@ public class Exercicio3 {
         int a = Integer.parseInt(JOptionPane.showInputDialog
                 ("Insira o primeiro valor inteiro: "));
         int b = Integer.parseInt(JOptionPane.showInputDialog
-                ("Insira o primeiro valor inteiro: "));
+                ("Insira o segundo valor inteiro: "));
 
         if (a%b == 0 || b%a == 0){
             JOptionPane.showMessageDialog(null, "Múltiplos");
