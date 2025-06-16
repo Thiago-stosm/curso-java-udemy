@@ -1,3 +1,4 @@
+package sessao06;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -30,6 +31,8 @@ public class Exercicio2 {
                     case 3:
                         diesel += 1;
                         break;  
+                    default:
+                        System.out.println("\"Digite um valor válido (inteiro entre 1 e 4");
                 }
     
             }catch(InputMismatchException e){
