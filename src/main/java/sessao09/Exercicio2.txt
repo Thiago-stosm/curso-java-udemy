@@ -1,0 +1,15 @@
+Para o controle de estoque de uma loja, ao cadastrar um produto, é necessário informar um código
+, o nome do produto e o seu preço. A quantidade inicial de itens em estoque, entretanto, é opcio
+nal. Caso essa quantidade não seja informada no momento do cadastro, o estoque do produto começa
+rá, naturalmente, com zero.
+
+Importante: uma vez que um produto é cadastrado, seu código e preço nunca poderão ser alterados.
+Já o nome do produto pode ser alterado (no caso de um erro de digitação no cadastro, por exemplo).
+Por fim, o estoque não pode ser alterado livremente. É preciso haver um mecanismo para proteger is
+so. O estoque só aumenta por meio da entrada de itens (adição) e só diminui por meio da saída de i
+tens (remoção). Regra: a quantidade em estoque não pode ficar negativa. Se uma tentativa de remoçã
+o for maior que o estoque disponível, a operação não deve ser realizada. Você deve fazer um progra
+ma que realize o cadastro de um produto, dando opção para que seja ou não informada a quantidade i
+nicial em estoque. Em seguida, realize uma adição ao estoque e depois uma remoção, sempre mostran
+do os dados do produto após cada operação.
+
