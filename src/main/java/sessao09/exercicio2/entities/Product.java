@@ -29,8 +29,8 @@ public class Product {
     public String getName(){
         return this.name;
     }
-    public String setName(String name){
-        return this.name;
+    public void setName(String name){
+        this.name = name;
     }
     public int getStock(){
         return this.stock;
@@ -45,8 +45,7 @@ public class Product {
     }
     public String toString(){
         return "Product Name: " + getName() + "\n" +
-                "Product Price: " + getPRICE() + "\n" +
-                "Product Stock: $" + String.format("%d", getStock());
+                "Product Price: $" + getPRICE() + "\n" +
+                "Product Stock: " +  this.getStock() + "\n";
     }
-
 }
