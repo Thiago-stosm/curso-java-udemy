@@ -12,7 +12,7 @@ public enum OrderStatus {
         this.codigo = codigo;
     }
 
-    public int getCodigo(){
+    public int getCode(OrderStatus orderStatus){
         return this.codigo;
     }
 }

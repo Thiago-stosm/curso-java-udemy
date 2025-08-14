@@ -1,4 +1,27 @@
 package sessao12.exercicio3.entities;
 
+import java.util.Date;
+
 public class Client {
+    private String name;
+    private String email;
+    private Date birthDate;
+
+    public Client(){
+    }
+
+    public String getName(){
+        return this.name;
+    }
+    public String getEmail(){
+        return this.email;
+    }
+    public Date getBirthDate(){
+        return this.birthDate;
+    }
+    public Client(String name, String email, Date birthDate){
+        this.name = name;
+        this.email = email;
+        this.birthDate = birthDate;
+    }
 }
