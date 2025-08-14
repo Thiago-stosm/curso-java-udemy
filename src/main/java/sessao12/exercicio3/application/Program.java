@@ -24,6 +24,7 @@ public class Program {
         String email = sc.nextLine();
         System.out.print("Birth Date (DD/MM/YYYY): ");
         Date birthDate = dateFormatter.parse(sc.nextLine());
+
         Client client = new Client(name, email, birthDate);
 
         //Order data
@@ -32,7 +33,6 @@ public class Program {
         String status = sc.nextLine();
         System.out.print("How many items to this order? ");
         int items = sc.nextInt();
-
         Order order = new Order(OrderStatus.valueOf(status), client);
 
         for(int i=0;i<items;i++){
@@ -63,5 +63,7 @@ public class Program {
             total+=item.subTotal();
         }
         System.out.print("Total price: $" + total);
+
+        sc.close();
     }
 }
