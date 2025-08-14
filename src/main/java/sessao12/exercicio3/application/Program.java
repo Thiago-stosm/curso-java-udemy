@@ -5,12 +5,7 @@ import sessao12.exercicio3.entities.Order;
 import sessao12.exercicio3.entities.OrderItem;
 import sessao12.exercicio3.entities.Product;
 import sessao12.exercicio3.entities.enums.OrderStatus;
-
-import javax.xml.crypto.Data;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.*;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -59,9 +54,7 @@ public class Program {
         System.out.printf("Order moment: " + order.getMoment() + "\n");
         System.out.printf("Order status: " + order.getStatus() + "\n");
         sc.nextLine();
-        // Logic that access the enum
         System.out.print("Client: " + client.getName() + " (" + client.getBirthDate() + ") - " + client.getEmail() + "\n");
-        // Client getter that access the attribute name, date, email
         System.out.print("Order items:\n");
         sc.nextLine();
         Double total=0.0;
@@ -72,8 +65,3 @@ public class Program {
         System.out.print("Total price: $" + total);
     }
 }
-
-/*Java time.format.Parsed cant be cast to class util.Date
-*
-*
-* */

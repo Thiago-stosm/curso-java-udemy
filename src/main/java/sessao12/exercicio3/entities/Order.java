@@ -34,6 +34,7 @@ public class Order {
     public Client getClient(){
         return this.client;
     }
+
     public List<OrderItem> getItems(){
         return this.items;
     }

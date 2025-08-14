@@ -9,6 +9,11 @@ public class Client {
 
     public Client(){
     }
+    public Client(String name, String email, Date birthDate){
+        this.name = name;
+        this.email = email;
+        this.birthDate = birthDate;
+    }
 
     public String getName(){
         return this.name;
@@ -18,10 +23,5 @@ public class Client {
     }
     public Date getBirthDate(){
         return this.birthDate;
-    }
-    public Client(String name, String email, Date birthDate){
-        this.name = name;
-        this.email = email;
-        this.birthDate = birthDate;
     }
 }

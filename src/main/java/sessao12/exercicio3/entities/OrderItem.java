@@ -17,10 +17,10 @@ public class OrderItem {
     public Integer getQuantity(){
         return this.quantity;
     }
-
     public Double getPrice(){
         return this.price;
     }
+
     public Double subTotal(){
         return quantity*price;
     }
